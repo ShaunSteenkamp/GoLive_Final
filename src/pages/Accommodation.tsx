@@ -117,7 +117,7 @@ const Accommodation = () => {
           className="container mx-auto max-w-3xl paper-invitation p-4 sm:p-8 md:p-12 rounded-2xl shadow-xl mt-8 relative z-10"
         >
           <motion.div variants={fadeInUp} className="text-center mb-12">
-            <h1 className="font-display text-4xl md:text-5xl tracking-[0.15em] mb-2 text-primary">ACCOMMODATION</h1>
+            <h1 className="font-display text-3xl sm:text-4xl md:text-5xl tracking-[0.1em] sm:tracking-[0.15em] mb-2 text-primary">ACCOMMODATION</h1>
             <p className="font-body text-lg text-muted-foreground">
               Recommended places to stay in and around Stellenbosch
             </p>

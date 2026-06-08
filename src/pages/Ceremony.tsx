@@ -39,7 +39,7 @@ const Ceremony = () => {
                 >
                     {/* Ceremony Section */}
                     <motion.div variants={fadeInUp} className="text-center mb-12">
-                        <h1 className="font-display text-4xl md:text-6xl text-primary mb-6 tracking-[0.1em]">
+                        <h1 className="font-display text-3xl sm:text-4xl md:text-6xl text-primary mb-6 tracking-[0.08em] sm:tracking-[0.1em]">
                             THE CEREMONY
                         </h1>
                         <p className="font-script text-3xl gold-accent-subtle">
@@ -82,8 +82,8 @@ const Ceremony = () => {
 
                         <motion.div variants={fadeInUp} className="space-y-6">
                             <div>
-                                <h3 className="font-display text-2xl mb-3 text-primary flex items-center justify-center gap-2">
-                                    <Info className="w-5 h-5" /> HISTORY & BEAUTY
+                                <h3 className="font-display text-xl sm:text-2xl mb-3 text-primary flex items-center justify-center gap-2">
+                                    <Info className="w-4 h-4 sm:w-5 sm:h-5" /> HISTORY & BEAUTY
                                 </h3>
                                 <p className="font-body text-muted-foreground leading-relaxed text-base md:text-lg">
                                     We will be exchanging our vows in the historic NG Moederkerk (Mother Church), the second oldest Dutch Reformed congregation in South Africa, established in 1686. 
@@ -97,8 +97,8 @@ const Ceremony = () => {
                             </div>
 
                             <div className="bg-wedding-cream/40 p-6 rounded-lg border border-primary/10">
-                                <h3 className="font-display text-xl mb-3 text-primary flex items-center justify-center gap-2">
-                                    <MapPin className="w-5 h-5" /> LOCATION
+                                <h3 className="font-display text-lg sm:text-xl mb-3 text-primary flex items-center justify-center gap-2">
+                                    <MapPin className="w-4 h-4 sm:w-5 sm:h-5" /> LOCATION
                                 </h3>
                                 <address className="font-body text-lg not-italic mb-4">
                                     Kerkstraat (Drostdy Street)<br/>
@@ -108,7 +108,7 @@ const Ceremony = () => {
                             </div>
 
                             <div className="bg-primary/5 p-6 rounded-lg border border-primary/10">
-                                <h4 className="font-display text-lg mb-2 text-primary">IMPORTANT NOTE</h4>
+                                <h4 className="font-display text-base sm:text-lg mb-2 text-primary">IMPORTANT NOTE</h4>
                                 <p className="font-body text-sm text-muted-foreground">
                                     The ceremony will begin promptly at 3:00 PM. Parking is available along the oak-lined streets surrounding the church, but we recommend allowing extra time to find a spot.
                                 </p>
@@ -121,7 +121,7 @@ const Ceremony = () => {
 
 
                     <motion.div variants={fadeInUp} className="text-center mb-12 pt-8">
-                        <h1 className="font-display text-4xl md:text-6xl text-primary mb-6 tracking-[0.1em]">
+                        <h1 className="font-display text-3xl sm:text-4xl md:text-6xl text-primary mb-6 tracking-[0.08em] sm:tracking-[0.1em]">
                             THE RECEPTION
                         </h1>
                         <p className="font-script text-3xl gold-accent-subtle">
@@ -157,8 +157,8 @@ const Ceremony = () => {
 
                         <motion.div variants={fadeInUp} className="space-y-6">
                             <div>
-                                <h3 className="font-display text-2xl mb-3 text-primary flex items-center gap-2">
-                                    <Wine className="w-5 h-5" /> THE VENUE
+                                <h3 className="font-display text-xl sm:text-2xl mb-3 text-primary flex items-center gap-2">
+                                    <Wine className="w-4 h-4 sm:w-5 sm:h-5" /> THE VENUE
                                 </h3>
                                 <p className="font-body text-muted-foreground leading-relaxed text-base md:text-lg">
                                     After the ceremony, join us for an unforgettable evening at <strong>Mulderbosch Vineyards</strong> — one of Stellenbosch's most beloved wine estates. 
@@ -178,8 +178,8 @@ const Ceremony = () => {
                             </div>
 
                             <div className="bg-wedding-cream/40 p-6 rounded-lg border border-primary/10">
-                                <h3 className="font-display text-xl mb-3 text-primary flex items-center gap-2">
-                                    <MapPin className="w-5 h-5" /> LOCATION
+                                <h3 className="font-display text-lg sm:text-xl mb-3 text-primary flex items-center gap-2">
+                                    <MapPin className="w-4 h-4 sm:w-5 sm:h-5" /> LOCATION
                                 </h3>
                                 <address className="font-body text-lg not-italic mb-4">
                                     Mulderbosch Vineyards<br/>

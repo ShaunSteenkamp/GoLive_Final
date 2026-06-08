@@ -124,7 +124,7 @@ const Index = () => {
            className="container mx-auto max-w-4xl relative z-10 paper-invitation p-6 sm:p-8 md:p-12 rounded-2xl shadow-xl"
         >
           <motion.div variants={fadeInUp} className="text-center mb-10 md:mb-16">
-            <h2 className="font-display text-3xl md:text-5xl tracking-[0.2em] mb-6 text-primary uppercase">
+            <h2 className="font-display text-2xl sm:text-3xl md:text-5xl tracking-[0.12em] sm:tracking-[0.2em] mb-6 text-primary uppercase">
               Ons Verhaal
             </h2>
             <div className="w-24 h-px bg-wedding-gold/40 mx-auto mb-10" />
@@ -223,7 +223,7 @@ const Index = () => {
           className="container mx-auto max-w-2xl"
         >
           <motion.div variants={fadeInUp} className="mb-8 paper-invitation p-6 sm:p-8 md:p-12 rounded-2xl shadow-xl">
-            <h2 className="font-display text-3xl md:text-4xl tracking-[0.15em] mb-4 text-primary">
+            <h2 className="font-display text-2xl sm:text-3xl md:text-4xl tracking-[0.1em] sm:tracking-[0.15em] mb-4 text-primary">
               OUR PHOTO GALLERY
             </h2>
             <p className="font-body text-base md:text-lg text-muted-foreground mb-6 md:mb-8">

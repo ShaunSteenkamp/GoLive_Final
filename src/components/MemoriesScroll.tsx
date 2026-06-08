@@ -9,27 +9,31 @@ const MemoriesScroll = () => {
   const targetRef = useRef<HTMLDivElement>(null);
   const { scrollYProgress } = useScroll({
     target: targetRef,
+    offset: ["start end", "end start"],
   });
 
   const selectedPhotos = allPhotos.slice(0, 20);
 
-  const x = useTransform(scrollYProgress, [0, 1], ["0%", "-85%"]);
+  const x = useTransform(scrollYProgress, [0, 1], ["5%", "-85%"]);
+  const opacity = useTransform(scrollYProgress, [0, 0.08, 0.92, 1], [0, 1, 1, 0]);
 
   return (
     <section className="relative">
-      <div ref={targetRef} className="relative h-[200vh]">
-        <div className="sticky top-0 h-screen flex items-center justify-center overflow-hidden">
-          {/* Title overlay at top */}
-          <div className="absolute top-6 md:top-10 left-4 right-4 z-20 pointer-events-none">
-            <div className="text-center paper-invitation p-4 sm:p-6 md:p-8 rounded-2xl shadow-xl max-w-lg mx-auto">
-              <h2 className="font-display text-2xl md:text-4xl text-primary tracking-[0.15em] drop-shadow-sm uppercase">
-                Our Journey
-              </h2>
-              <p className="font-body text-primary/80 text-xs md:text-base tracking-widest mt-1 uppercase">
-                Scroll to explore
-              </p>
-            </div>
+      <div ref={targetRef} className="h-[200vh]" />
+      <motion.div
+        style={{ opacity }}
+        className="fixed inset-0 top-0 z-10 flex items-center justify-center overflow-hidden bg-wedding-cream/10 pointer-events-none"
+      >
+        <div className="absolute top-6 md:top-10 left-4 right-4 z-20">
+          <div className="text-center paper-invitation p-4 sm:p-6 md:p-8 rounded-2xl shadow-xl max-w-lg mx-auto">
+            <h2 className="font-display text-2xl md:text-4xl text-primary tracking-[0.15em] drop-shadow-sm uppercase">
+              Our Journey
+            </h2>
+            <p className="font-body text-primary/80 text-xs md:text-base tracking-widest mt-1 uppercase">
+              Scroll to explore
+            </p>
           </div>
+        </div>
         <motion.div style={{ x }} className="flex gap-8 px-8">
           {selectedPhotos.map((src, index) => (
             <motion.div
@@ -52,8 +56,7 @@ const MemoriesScroll = () => {
             </motion.div>
           ))}
         </motion.div>
-        </div>
-      </div>
+      </motion.div>
     </section>
   );
 };
