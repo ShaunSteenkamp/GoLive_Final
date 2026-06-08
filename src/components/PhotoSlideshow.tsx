@@ -79,7 +79,7 @@ const PhotoSlideshow = ({ isOpen, onClose, startIndex = 0 }: PhotoSlideshowProps
       {/* Close Button */}
       <button
         onClick={onClose}
-        className="absolute top-4 right-4 z-10 p-2 rounded-full bg-white/10 hover:bg-white/20 transition-colors"
+        className="absolute top-4 right-4 z-10 p-3 rounded-full bg-white/10 hover:bg-white/20 transition-colors"
       >
         <X className="w-6 h-6 text-white" />
       </button>

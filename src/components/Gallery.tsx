@@ -84,7 +84,7 @@ const Gallery = () => {
   };
 
   return (
-    <section ref={ref} className="relative min-h-screen py-20 px-4 overflow-hidden">
+    <section ref={ref} className="relative min-h-screen py-12 md:py-20 px-4 overflow-hidden">
 
       {/* Parallax Background */}
       <motion.div 

@@ -30,7 +30,7 @@ const Ceremony = () => {
             </div>
             <Navigation />
 
-            <section className="pt-32 px-4 container mx-auto max-w-5xl">
+            <section className="pt-24 md:pt-32 px-4 container mx-auto max-w-5xl">
                 <motion.div
                     variants={stagger}
                     initial="hidden"
@@ -85,11 +85,11 @@ const Ceremony = () => {
                                 <h3 className="font-display text-2xl mb-3 text-primary flex items-center justify-center gap-2">
                                     <Info className="w-5 h-5" /> HISTORY & BEAUTY
                                 </h3>
-                                <p className="font-body text-muted-foreground leading-relaxed text-lg">
+                                <p className="font-body text-muted-foreground leading-relaxed text-base md:text-lg">
                                     We will be exchanging our vows in the historic NG Moederkerk (Mother Church), the second oldest Dutch Reformed congregation in South Africa, established in 1686. 
                                     The first service was held on October 13, 1686, and the cornerstone of the original building was laid in 1687.
                                 </p>
-                                <p className="font-body text-muted-foreground leading-relaxed text-lg mt-4">
+                                <p className="font-body text-muted-foreground leading-relaxed text-base md:text-lg mt-4">
                                     The current magnificent Neo-Gothic structure was designed by Carl Otto Hager from Dresden, Germany, and completed in 1863. 
                                     With its pristine white walls, impressive tower, buttresses, pointed-arch windows adorned with trefoil decorations, and delicate French-method stained glass, 
                                     this architectural masterpiece provides the perfect sacred space for us to say "I do."
@@ -160,14 +160,14 @@ const Ceremony = () => {
                                 <h3 className="font-display text-2xl mb-3 text-primary flex items-center gap-2">
                                     <Wine className="w-5 h-5" /> THE VENUE
                                 </h3>
-                                <p className="font-body text-muted-foreground leading-relaxed text-lg">
+                                <p className="font-body text-muted-foreground leading-relaxed text-base md:text-lg">
                                     After the ceremony, join us for an unforgettable evening at <strong>Mulderbosch Vineyards</strong> — one of Stellenbosch's most beloved wine estates. 
                                 </p>
-                                <p className="font-body text-muted-foreground leading-relaxed text-lg mt-4">
+                                <p className="font-body text-muted-foreground leading-relaxed text-base md:text-lg mt-4">
                                     Set among rolling vineyards with breathtaking views of the Cape mountains, Mulderbosch offers an intimate and romantic atmosphere for our celebration. 
                                     Enjoy award-winning South African wines, exceptional cuisine, and celebrate with us as we begin our new life together.
                                 </p>
-                                <p className="font-body text-muted-foreground leading-relaxed text-lg mt-4">
+                                <p className="font-body text-muted-foreground leading-relaxed text-base md:text-lg mt-4">
                                     The evening will include a cocktail hour, three-course dinner, speeches, and dancing the night away under the stars.
                                 </p>
                                 <Button asChild variant="outline" className="mt-4 border-primary text-primary hover:bg-primary hover:text-white">
@@ -199,7 +199,7 @@ const Ceremony = () => {
             </section>
 
             <footer className="py-12 px-4 text-center">
-                <p className="font-script text-4xl text-white mb-2 drop-shadow-md">Shaun & Alexandra</p>
+                <p className="font-script text-3xl md:text-4xl text-white mb-2 drop-shadow-md">Shaun & Alexandra</p>
                 <p className="font-display text-sm tracking-[0.2em] text-white/80 uppercase">5 SEPTEMBER 2026 · STELLENBOSCH</p>
                 <p className="font-script text-xl text-white/90 mt-4">#RotsVas</p>
             </footer>

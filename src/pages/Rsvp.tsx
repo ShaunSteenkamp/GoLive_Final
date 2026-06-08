@@ -142,7 +142,7 @@ const Rsvp = () => {
                     render={({ field }) => (
                       <FormItem>
                         <FormLabel className="font-display tracking-[0.1em] text-sm">WILL YOU BE ATTENDING?</FormLabel>
-                        <div className="flex gap-3">
+                        <div className="flex flex-col sm:flex-row gap-3">
                           <Button
                             type="button"
                             variant={field.value ? "default" : "outline"}

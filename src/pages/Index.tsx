@@ -27,82 +27,82 @@ const Index = () => {
     <div className="min-h-screen relative z-0">
       <div className="fixed inset-0 -z-10 overflow-hidden">
         <img src={mountainBg} alt="" className="w-full h-full object-cover object-center" />
-        <div className="absolute inset-0 bg-background/20" />
+        <div className="absolute inset-0 bg-background/10" />
       </div>
       <Navigation />
 
       {/* Invitation / Hero Section - no extra background, just the global fixed bg */}
-      <section className="relative min-h-screen md:min-h-[110vh] flex flex-col items-center justify-center px-4 pt-20 overflow-hidden">
+      <section className="relative min-h-screen md:min-h-screen flex flex-col items-center justify-center px-2 sm:px-4 pt-16 md:pt-20 overflow-hidden">
         <motion.div
           variants={stagger}
           initial="hidden"
           animate="visible"
-          className="text-center z-10 max-w-3xl px-4 sm:px-8 md:px-12 py-12 sm:py-16 md:py-24 paper-invitation rounded-lg border border-wedding-gold/20 shadow-2xl overflow-hidden mt-10"
+          className="text-center z-10 max-w-3xl w-full mx-2 sm:mx-0 px-4 sm:px-8 md:px-12 py-6 sm:py-12 md:py-20 paper-invitation rounded-lg border border-wedding-gold/20 shadow-2xl overflow-hidden mt-16 md:mt-10 bg-white/85 sm:bg-[#fdfcf8] backdrop-blur-sm sm:backdrop-blur-none"
         >
           {/* Subtle floral pattern overlay on paper */}
           <div className="absolute inset-0 opacity-[0.03] pointer-events-none bg-[url('https://www.transparenttextures.com/patterns/vintage-floral.png')] shadow-inner" />
           
-          <motion.div variants={fadeInUp} className="mb-8 relative">
-            <p className="font-body text-sm md:text-base tracking-[0.5em] uppercase text-primary/70 font-medium">
+          <motion.div variants={fadeInUp} className="mb-4 md:mb-8 relative">
+            <p className="font-body text-xs sm:text-sm md:text-base tracking-[0.3em] sm:tracking-[0.5em] uppercase text-primary/70 font-medium">
               Together with their families
             </p>
           </motion.div>
 
-          <motion.div variants={fadeInUp} className="space-y-4 mb-10">
-            <h1 className="font-script text-7xl md:text-9xl text-primary drop-shadow-sm leading-tight">
+          <motion.div variants={fadeInUp} className="space-y-2 md:space-y-4 mb-4 md:mb-10">
+            <h1 className="font-script text-5xl sm:text-7xl md:text-9xl text-primary drop-shadow-sm leading-tight">
               <span className="text-liquid-gold">Shaun & Alexandra</span>
             </h1>
-            <p className="font-display text-5xl md:text-7xl tracking-[0.4em] text-primary/90 uppercase font-light">
+            <p className="font-display text-3xl sm:text-5xl md:text-7xl tracking-[0.3em] sm:tracking-[0.4em] text-primary/90 uppercase font-light">
               <span className="text-liquid-gold">Steenkamp</span>
             </p>
           </motion.div>
 
           <motion.div 
             variants={fadeInUp} 
-            className="w-48 h-px bg-wedding-gold mx-auto my-10 relative"
+            className="w-32 sm:w-48 h-px bg-wedding-gold mx-auto my-4 md:my-10 relative"
           >
             <div className="absolute inset-0 blur-sm bg-gold-leaf" />
           </motion.div>
 
-          <motion.div variants={fadeInUp} className="space-y-1 mb-8">
-            <p className="font-display text-4xl md:text-5xl tracking-[0.2em] text-primary font-medium">
+          <motion.div variants={fadeInUp} className="space-y-1 mb-4 md:mb-8">
+            <p className="font-display text-2xl sm:text-4xl md:text-5xl tracking-[0.15em] sm:tracking-[0.2em] text-primary font-medium">
               5 September 2026
             </p>
-            <p className="font-script text-3xl md:text-4xl tracking-[0.1em] gold-accent-subtle mt-4 font-normal">
+            <p className="font-script text-xl sm:text-3xl md:text-4xl tracking-[0.1em] gold-accent-subtle mt-2 md:mt-4 font-normal">
               14:30 for 15:00
             </p>
-            <p className="font-body text-lg md:text-xl text-muted-foreground mt-3 italic">
+            <p className="font-body text-sm sm:text-lg md:text-xl text-muted-foreground mt-2 md:mt-3 italic">
               Die Moederkerk • Church Street, Stellenbosch
             </p>
           </motion.div>
 
-          <motion.p variants={fadeInUp} className="font-script text-6xl md:text-8xl gold-accent-subtle mt-6 mb-2 tracking-wide">
+          <motion.p variants={fadeInUp} className="font-script text-4xl sm:text-6xl md:text-8xl gold-accent-subtle mt-3 md:mt-6 mb-1 md:mb-2 tracking-wide">
             #RotsVas
           </motion.p>
 
-          <motion.p variants={fadeInUp} className="font-body text-sm md:text-base text-muted-foreground italic tracking-wide mb-4 max-w-lg mx-auto leading-relaxed">
+          <motion.p variants={fadeInUp} className="font-body text-xs sm:text-sm md:text-base text-muted-foreground italic tracking-wide mb-3 md:mb-4 max-w-lg mx-auto leading-relaxed hidden sm:block">
             "Elkeen dan wat na hierdie woorde van My luister en dit doen, hom sal Ek vergelyk met 'n verstandige man wat sy huis op die rots gebou het. En die stortreën het geval en die waterstrome het gekom en die winde het gewaai en teen daardie huis aangestorm, en dit het nie geval nie, want sy fondament was op die rots."
             <br/><span className="text-xs mt-1 block">— Matteus 7:24-25</span>
           </motion.p>
 
-          <motion.div variants={fadeInUp} className="mb-12 scale-110">
+          <motion.div variants={fadeInUp} className="mb-4 md:mb-12 scale-100 md:scale-110">
             <Countdown />
           </motion.div>
 
-          <motion.div variants={fadeInUp} className="flex flex-col sm:flex-row flex-wrap gap-3 justify-center">
-            <Button asChild size="lg" variant="fynbos" className="w-full sm:w-auto font-display tracking-[0.2em] uppercase text-xs sm:text-sm px-6 sm:px-10 py-6 sm:py-7 shadow-2xl hover:scale-105 transition-all">
+          <motion.div variants={fadeInUp} className="flex flex-col sm:flex-row flex-wrap gap-2 md:gap-3 justify-center">
+            <Button asChild size="default" variant="fynbos" className="w-full sm:w-auto font-display tracking-[0.15em] sm:tracking-[0.2em] uppercase text-xs sm:text-sm px-4 sm:px-8 py-4 sm:py-7 shadow-2xl hover:scale-105 transition-all">
               <Link to="/rsvp">RSVP Now</Link>
             </Button>
-            <Button asChild variant="outline" size="lg" className="w-full sm:w-auto font-display tracking-[0.2em] uppercase text-xs sm:text-sm px-6 sm:px-10 py-6 sm:py-7 border-primary/30 text-primary hover:bg-primary hover:text-white transition-all">
+            <Button asChild variant="outline" size="default" className="w-full sm:w-auto font-display tracking-[0.15em] sm:tracking-[0.2em] uppercase text-xs sm:text-sm px-4 sm:px-8 py-4 sm:py-7 border-primary/30 text-primary hover:bg-primary hover:text-white transition-all">
               <Link to="/ceremony">The Ceremony</Link>
             </Button>
-            <Button asChild variant="outline" size="lg" className="w-full sm:w-auto font-display tracking-[0.2em] uppercase text-xs sm:text-sm px-6 sm:px-10 py-6 sm:py-7 border-primary/30 text-primary hover:bg-primary hover:text-white transition-all">
+            <Button asChild variant="outline" size="default" className="w-full sm:w-auto font-display tracking-[0.15em] sm:tracking-[0.2em] uppercase text-xs sm:text-sm px-4 sm:px-8 py-4 sm:py-7 border-primary/30 text-primary hover:bg-primary hover:text-white transition-all">
               <Link to="/accommodation">Guest Info</Link>
             </Button>
-            <Button asChild variant="outline" size="lg" className="w-full sm:w-auto font-display tracking-[0.2em] uppercase text-xs sm:text-sm px-6 sm:px-10 py-6 sm:py-7 border-primary/30 text-primary hover:bg-primary hover:text-white transition-all">
+            <Button asChild variant="outline" size="default" className="w-full sm:w-auto font-display tracking-[0.15em] sm:tracking-[0.2em] uppercase text-xs sm:text-sm px-4 sm:px-8 py-4 sm:py-7 border-primary/30 text-primary hover:bg-primary hover:text-white transition-all">
               <Link to="/gallery#gallery-top">View Gallery</Link>
             </Button>
-            <Button asChild variant="outline" size="lg" className="w-full sm:w-auto font-display tracking-[0.2em] uppercase text-xs sm:text-sm px-6 sm:px-10 py-6 sm:py-7 border-primary/30 text-primary hover:bg-primary hover:text-white transition-all">
+            <Button asChild variant="outline" size="default" className="w-full sm:w-auto font-display tracking-[0.15em] sm:tracking-[0.2em] uppercase text-xs sm:text-sm px-4 sm:px-8 py-4 sm:py-7 border-primary/30 text-primary hover:bg-primary hover:text-white transition-all">
               <Link to="/guestbook">Guestbook</Link>
             </Button>
           </motion.div>
@@ -112,7 +112,7 @@ const Index = () => {
       <YearPlan />
       
       {/* Our Story Section */}
-      <section className="py-24 px-4 relative overflow-hidden">
+      <section className="py-12 md:py-24 px-4 relative overflow-hidden">
         <div className="absolute top-0 left-0 w-64 h-64 bg-wedding-gold/5 rounded-full blur-3xl -translate-x-1/2 -translate-y-1/2" />
         <div className="absolute bottom-0 right-0 w-96 h-96 bg-primary/5 rounded-full blur-3xl translate-x-1/3 translate-y-1/3" />
         
@@ -132,16 +132,16 @@ const Index = () => {
 
           <div className="grid md:grid-cols-2 gap-10 md:gap-16 items-center">
             <motion.div variants={fadeInUp} className="space-y-6">
-              <p className="font-body text-lg md:text-2xl leading-relaxed text-foreground/90 first-letter:text-5xl md:first-letter:text-6xl first-letter:font-script first-letter:text-wedding-gold first-letter:mr-3 first-letter:float-left drop-shadow-sm">
+              <p className="font-body text-base sm:text-lg md:text-2xl leading-relaxed text-foreground/90 first-letter:text-4xl sm:first-letter:text-5xl md:first-letter:text-6xl first-letter:font-script first-letter:text-wedding-gold first-letter:mr-2 md:first-letter:mr-3 first-letter:float-left drop-shadow-sm">
                 In 'n tyd toe die wêreld stil en afgesonder was, het 'n toevallige glimlag en 'n onverwags ontmoeting 'n vonk laat ontstaan wat ons lewens verander het. Waar ander mense vrees gehad het vir kontak, het ons twee siele mekaar gevind en 'n band gesmee wat onmiddellik onafskeidbaar gevoel het.
               </p>
-              <p className="font-body text-xl md:text-2xl leading-relaxed text-foreground/90">
+              <p className="font-body text-base sm:text-lg md:text-2xl leading-relaxed text-foreground/90">
                 Daardie eerste paar dae was 'n storm van opwinding en ontdekking — elke oomblik saam het soos 'n nuwe avontuur gevoel. Ons het gelag, gedroom en geleef asof die wêreld net vir ons twee bestaan het, sonder 'n enkele oomblik van verveling.
               </p>
-              <p className="font-body text-xl md:text-2xl leading-relaxed text-foreground/90">
+              <p className="font-body text-base sm:text-lg md:text-2xl leading-relaxed text-foreground/90">
                 Sedertdien het ons liefde net sterker geword: daar is geen berg te hoog, geen uitdaging te groot, en geen avontuur te waaghalsig wat ons nie saam wil aanpak nie.
               </p>
-              <p className="font-body text-xl md:text-2xl leading-relaxed text-foreground/90">
+              <p className="font-body text-base sm:text-lg md:text-2xl leading-relaxed text-foreground/90">
                 Nou is ons opgewonde om in 'n huwelik in te tree onder God se genade, liefde en seën. Ons eer Hom vandag en elke dag daarna dat Hy die twee van ons saam gebring het. Ons bid en vra dat die Here hierdie heilige verbintenis sal seën, en mag ons dag Hom loof deur ons liefde en ons lewens saam.
               </p>
               <div className="pt-6 border-t border-primary/20">
@@ -184,11 +184,11 @@ const Index = () => {
             <p className="font-script text-3xl md:text-4xl text-primary mb-6">
               Thank You, Ben & Anri!
             </p>
-            <p className="font-body text-lg md:text-xl leading-relaxed text-foreground/80 mb-6">
+            <p className="font-body text-base md:text-xl leading-relaxed text-foreground/80 mb-6">
               We are endlessly grateful to our dear friends <strong>Ben & Anri</strong> of <strong>Candid Photography</strong> for capturing our engagement photos so beautifully. 
               Your talent, patience, and creative eye have given us memories we will cherish forever.
             </p>
-            <p className="font-body text-lg md:text-xl leading-relaxed text-foreground/80 mb-8">
+            <p className="font-body text-base md:text-xl leading-relaxed text-foreground/80 mb-8">
               The photos throughout this website are a testament to your incredible work and the love you pour into every shot. 
               We couldn't have asked for better friends or photographers!
             </p>
@@ -226,20 +226,20 @@ const Index = () => {
             <h2 className="font-display text-3xl md:text-4xl tracking-[0.15em] mb-4 text-primary">
               OUR PHOTO GALLERY
             </h2>
-            <p className="font-body text-lg text-muted-foreground mb-8">
+            <p className="font-body text-base md:text-lg text-muted-foreground mb-6 md:mb-8">
               View our beautiful engagement photos captured by Candid Photography
             </p>
-            <Button asChild size="lg" variant="fynbos" className="font-display tracking-[0.2em] uppercase px-12 py-7">
+            <Button asChild size="default" variant="fynbos" className="w-full sm:w-auto font-display tracking-[0.15em] sm:tracking-[0.2em] uppercase text-xs sm:text-sm px-6 sm:px-12 py-4 sm:py-7">
               <Link to="/gallery#gallery-top">View Full Gallery</Link>
             </Button>
           </motion.div>
         </motion.div>
       </section>
       
-      <footer className="py-12 px-4 text-center">
-        <p className="font-script text-4xl text-white mb-2 drop-shadow-md">Shaun & Alexandra</p>
-        <p className="font-display text-sm tracking-[0.2em] text-white/80 uppercase">5 SEPTEMBER 2026 · STELLENBOSCH</p>
-        <p className="font-script text-xl text-white/90 mt-4">#RotsVas</p>
+      <footer className="py-8 md:py-12 px-4 text-center">
+        <p className="font-script text-3xl md:text-4xl text-white mb-2 drop-shadow-md">Shaun & Alexandra</p>
+        <p className="font-display text-xs md:text-sm tracking-[0.15em] md:tracking-[0.2em] text-white/80 uppercase">5 SEPTEMBER 2026 · STELLENBOSCH</p>
+        <p className="font-script text-lg md:text-xl text-white/90 mt-3 md:mt-4">#RotsVas</p>
       </footer>
     </div>
   );

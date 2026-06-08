@@ -19,17 +19,17 @@ const MemoriesScroll = () => {
   return (
     <section className="relative bg-wedding-cream/10">
       {/* Title at Top */}
-      <div className="py-20 px-4">
+      <div className="py-12 md:py-20 px-4">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 1 }}
           className="text-center paper-invitation p-6 sm:p-8 md:p-12 rounded-2xl shadow-xl max-w-2xl mx-auto"
         >
-          <h2 className="font-display text-4xl md:text-6xl text-primary tracking-[0.2em] drop-shadow-sm uppercase">
+          <h2 className="font-display text-3xl md:text-6xl text-primary tracking-[0.15em] md:tracking-[0.2em] drop-shadow-sm uppercase">
             Our Journey
           </h2>
-          <p className="font-body text-primary/80 text-lg tracking-widest mt-2 uppercase">
+          <p className="font-body text-primary/80 text-sm md:text-lg tracking-widest mt-2 uppercase">
             Scroll to explore
           </p>
         </motion.div>

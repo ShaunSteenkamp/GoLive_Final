@@ -76,10 +76,10 @@ const Navigation = () => {
                 to={link.to}
                 onClick={() => setIsOpen(false)}
                 className={cn(
-                  "font-display text-sm sm:text-base tracking-[0.2em] sm:tracking-[0.3em] uppercase transition-colors border-b border-transparent",
+                    "font-display text-sm sm:text-base tracking-[0.2em] sm:tracking-[0.3em] uppercase transition-colors border-b border-transparent",
                   location.pathname === link.to
-                    ? "text-primary border-primary/30 py-2"
-                    : "text-muted-foreground py-2"
+                    ? "text-primary border-primary/30 py-3"
+                    : "text-muted-foreground py-3"
                 )}
               >
                 {link.label}

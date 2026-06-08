@@ -183,7 +183,7 @@ const Accommodation = () => {
       </section>
 
       <footer className="py-12 px-4 text-center">
-        <p className="font-script text-4xl text-white mb-2 drop-shadow-md">Shaun & Alexandra</p>
+        <p className="font-script text-3xl md:text-4xl text-white mb-2 drop-shadow-md">Shaun & Alexandra</p>
         <p className="font-display text-sm tracking-[0.2em] text-white/80 uppercase">5 SEPTEMBER 2026 · STELLENBOSCH</p>
         <p className="font-script text-xl text-white/90 mt-4">#RotsVas</p>
       </footer>
