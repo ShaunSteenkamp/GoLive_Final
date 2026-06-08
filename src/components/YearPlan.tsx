@@ -95,7 +95,7 @@ const YearPlan = () => {
           <p className="font-body text-lg text-muted-foreground mb-6">
             Keep track of our special dates.
           </p>
-          <Button asChild className="bg-primary hover:bg-primary/90 text-white font-display tracking-widest">
+          <Button asChild size="lg" className="w-full sm:w-auto bg-primary hover:bg-primary/90 text-white font-display tracking-widest px-8 py-6 shadow-xl">
             <a href={googleCalendarUrl} target="_blank" rel="noopener noreferrer">
               Add to Google Calendar
             </a>

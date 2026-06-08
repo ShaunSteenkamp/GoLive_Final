@@ -25,7 +25,7 @@ const Ceremony = () => {
     return (
         <div className="min-h-screen">
             <div className="fixed inset-0 -z-10">
-                <img src={mountainBg} alt="" className="w-full h-full object-cover" />
+                <img src={mountainBg} alt="" className="w-full h-full object-cover object-[70%_center] sm:object-center" />
                 <div className="absolute inset-0 bg-background/10" />
             </div>
             <Navigation />

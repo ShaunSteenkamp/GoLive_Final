@@ -106,7 +106,7 @@ const Accommodation = () => {
        <section className="relative pt-28 pb-20 px-4 overflow-hidden">
         {/* Background Image - Fixed */}
         <div className="fixed inset-0 -z-10">
-          <img src={accommodationBg} alt="" className="w-full h-full object-cover" />
+          <img src={accommodationBg} alt="" className="w-full h-full object-cover object-[70%_center] sm:object-center" />
           <div className="absolute inset-0 bg-background/10" />
         </div>
 
@@ -145,26 +145,26 @@ const Accommodation = () => {
             {hotels.map((hotel, i) => (
               <motion.div key={hotel.name} variants={fadeInUp}>
                 <Card className="overflow-hidden hover:shadow-md transition-shadow">
-                  <CardContent className="p-6 md:p-8">
-                    <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-4">
+                  <CardContent className="p-4 sm:p-6 md:p-8">
+                    <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-3 md:gap-4">
                       <div className="flex-1">
                         <div className="flex items-center gap-2 mb-1">
-                          <h3 className="font-display text-xl tracking-[0.05em]">{hotel.name}</h3>
+                          <h3 className="font-display text-lg sm:text-xl tracking-[0.05em]">{hotel.name}</h3>
                         </div>
-                        <div className="flex items-center gap-0.5 mb-3">
+                        <div className="flex items-center gap-0.5 mb-2">
                           {Array.from({ length: hotel.rating }).map((_, j) => (
-                            <Star key={j} className="w-3.5 h-3.5 fill-wedding-gold text-wedding-gold" />
+                            <Star key={j} className="w-3 h-3 sm:w-3.5 sm:h-3.5 fill-wedding-gold text-wedding-gold" />
                           ))}
                         </div>
-                        <p className="font-body text-muted-foreground mb-3">{hotel.description}</p>
-                        <div className="flex items-center gap-4 flex-wrap">
-                          <span className="font-display text-sm tracking-wider text-primary">{hotel.price}</span>
-                          <span className="text-muted-foreground font-body text-sm flex items-center gap-1">
-                            <MapPin className="w-3.5 h-3.5" /> Stellenbosch
+                        <p className="font-body text-sm sm:text-base text-muted-foreground mb-3">{hotel.description}</p>
+                        <div className="flex items-center gap-3 sm:gap-4 flex-wrap">
+                          <span className="font-display text-xs sm:text-sm tracking-wider text-primary">{hotel.price}</span>
+                          <span className="text-muted-foreground font-body text-xs sm:text-sm flex items-center gap-1">
+                            <MapPin className="w-3 h-3 sm:w-3.5 sm:h-3.5" /> Stellenbosch
                           </span>
                         </div>
                       </div>
-                      <Button variant="outline" size="sm" className="font-display tracking-[0.1em] text-xs shrink-0" asChild>
+                      <Button variant="outline" size="sm" className="w-full sm:w-auto font-display tracking-[0.1em] text-xs shrink-0 mt-1 sm:mt-0" asChild>
                         <a href={hotel.link} target="_blank" rel="noopener noreferrer">
                           Visit <ExternalLink className="w-3 h-3 ml-1" />
                         </a>

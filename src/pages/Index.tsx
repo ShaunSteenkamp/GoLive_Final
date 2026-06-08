@@ -26,7 +26,7 @@ const Index = () => {
   return (
     <div className="min-h-screen relative z-0">
       <div className="fixed inset-0 -z-10 overflow-hidden">
-        <img src={mountainBg} alt="" className="w-full h-full object-cover object-center" />
+        <img src={mountainBg} alt="" className="w-full h-full object-cover object-[70%_center] sm:object-center" />
         <div className="absolute inset-0 bg-background/10" />
       </div>
       <Navigation />
@@ -93,16 +93,16 @@ const Index = () => {
             <Button asChild size="default" variant="fynbos" className="w-full sm:w-auto font-display tracking-[0.15em] sm:tracking-[0.2em] uppercase text-xs sm:text-sm px-4 sm:px-8 py-4 sm:py-7 shadow-2xl hover:scale-105 transition-all">
               <Link to="/rsvp">RSVP Now</Link>
             </Button>
-            <Button asChild variant="outline" size="default" className="w-full sm:w-auto font-display tracking-[0.15em] sm:tracking-[0.2em] uppercase text-xs sm:text-sm px-4 sm:px-8 py-4 sm:py-7 border-primary/30 text-primary hover:bg-primary hover:text-white transition-all">
+            <Button asChild variant="outline" size="default" className="w-full sm:w-auto font-display tracking-[0.15em] sm:tracking-[0.2em] uppercase text-xs sm:text-sm px-4 sm:px-8 py-4 sm:py-7 border-primary/40 bg-white/90 text-primary hover:bg-primary hover:text-white hover:border-primary transition-all shadow-md">
               <Link to="/ceremony">The Ceremony</Link>
             </Button>
-            <Button asChild variant="outline" size="default" className="w-full sm:w-auto font-display tracking-[0.15em] sm:tracking-[0.2em] uppercase text-xs sm:text-sm px-4 sm:px-8 py-4 sm:py-7 border-primary/30 text-primary hover:bg-primary hover:text-white transition-all">
+            <Button asChild variant="outline" size="default" className="w-full sm:w-auto font-display tracking-[0.15em] sm:tracking-[0.2em] uppercase text-xs sm:text-sm px-4 sm:px-8 py-4 sm:py-7 border-primary/40 bg-white/90 text-primary hover:bg-primary hover:text-white hover:border-primary transition-all shadow-md">
               <Link to="/accommodation">Guest Info</Link>
             </Button>
-            <Button asChild variant="outline" size="default" className="w-full sm:w-auto font-display tracking-[0.15em] sm:tracking-[0.2em] uppercase text-xs sm:text-sm px-4 sm:px-8 py-4 sm:py-7 border-primary/30 text-primary hover:bg-primary hover:text-white transition-all">
+            <Button asChild variant="outline" size="default" className="w-full sm:w-auto font-display tracking-[0.15em] sm:tracking-[0.2em] uppercase text-xs sm:text-sm px-4 sm:px-8 py-4 sm:py-7 border-primary/40 bg-white/90 text-primary hover:bg-primary hover:text-white hover:border-primary transition-all shadow-md">
               <Link to="/gallery#gallery-top">View Gallery</Link>
             </Button>
-            <Button asChild variant="outline" size="default" className="w-full sm:w-auto font-display tracking-[0.15em] sm:tracking-[0.2em] uppercase text-xs sm:text-sm px-4 sm:px-8 py-4 sm:py-7 border-primary/30 text-primary hover:bg-primary hover:text-white transition-all">
+            <Button asChild variant="outline" size="default" className="w-full sm:w-auto font-display tracking-[0.15em] sm:tracking-[0.2em] uppercase text-xs sm:text-sm px-4 sm:px-8 py-4 sm:py-7 border-primary/40 bg-white/90 text-primary hover:bg-primary hover:text-white hover:border-primary transition-all shadow-md">
               <Link to="/guestbook">Guestbook</Link>
             </Button>
           </motion.div>
@@ -196,7 +196,7 @@ const Index = () => {
               asChild
               variant="fynbos"
               size="lg"
-              className="font-display tracking-[0.15em] uppercase"
+              className="w-full sm:w-auto font-display tracking-[0.15em] uppercase px-6 sm:px-10 py-4 sm:py-7 shadow-2xl"
             >
               <a 
                 href="https://www.candidphotography.co.za" 
@@ -229,7 +229,7 @@ const Index = () => {
             <p className="font-body text-base md:text-lg text-muted-foreground mb-6 md:mb-8">
               View our beautiful engagement photos captured by Candid Photography
             </p>
-            <Button asChild size="default" variant="fynbos" className="w-full sm:w-auto font-display tracking-[0.15em] sm:tracking-[0.2em] uppercase text-xs sm:text-sm px-6 sm:px-12 py-4 sm:py-7">
+            <Button asChild size="default" variant="fynbos" className="w-full sm:w-auto font-display tracking-[0.15em] sm:tracking-[0.2em] uppercase text-xs sm:text-sm px-6 sm:px-12 py-4 sm:py-7 shadow-2xl">
               <Link to="/gallery#gallery-top">View Full Gallery</Link>
             </Button>
           </motion.div>

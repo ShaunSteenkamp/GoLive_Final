@@ -35,7 +35,7 @@ const MemoriesScroll = () => {
         </motion.div>
       </div>
 
-      <div ref={targetRef} className="relative h-[300vh]">
+      <div ref={targetRef} className="relative h-[200vh]">
         <div className="sticky top-0 h-screen flex items-center overflow-hidden">
         <motion.div style={{ x }} className="flex gap-8 px-8">
           {selectedPhotos.map((src, index) => (
@@ -61,6 +61,7 @@ const MemoriesScroll = () => {
         </motion.div>
         </div>
       </div>
+      <div className="h-32 bg-gradient-to-b from-wedding-cream/10 to-background pointer-events-none" />
     </section>
   );
 };
