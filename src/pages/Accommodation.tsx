@@ -114,7 +114,7 @@ const Accommodation = () => {
           initial="hidden"
           animate="visible"
           variants={{ visible: { transition: { staggerChildren: 0.15 } } }}
-          className="container mx-auto max-w-3xl paper-invitation p-8 md:p-12 rounded-2xl shadow-xl mt-8 relative z-10"
+          className="container mx-auto max-w-3xl paper-invitation p-4 sm:p-8 md:p-12 rounded-2xl shadow-xl mt-8 relative z-10"
         >
           <motion.div variants={fadeInUp} className="text-center mb-12">
             <h1 className="font-display text-4xl md:text-5xl tracking-[0.15em] mb-2 text-primary">ACCOMMODATION</h1>

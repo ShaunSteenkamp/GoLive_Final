@@ -32,13 +32,13 @@ const Countdown = () => {
   }, []);
 
   return (
-    <div className="flex justify-center gap-4 md:gap-8 py-8 text-center text-primary">
+    <div className="flex justify-center gap-2 sm:gap-4 md:gap-8 py-8 text-center text-primary">
       {Object.entries(timeLeft).map(([unit, value]) => (
-        <div key={unit} className="flex flex-col items-center">
-          <span className="font-display text-4xl md:text-5xl font-light">
+        <div key={unit} className="flex flex-col items-center min-w-[60px] sm:min-w-0">
+          <span className="font-display text-3xl sm:text-4xl md:text-5xl font-light">
             {value.toString().padStart(2, "0")}
           </span>
-          <span className="font-body text-sm uppercase tracking-widest mt-2 text-muted-foreground">{unit}</span>
+          <span className="font-body text-xs sm:text-sm uppercase tracking-widest mt-2 text-muted-foreground">{unit}</span>
         </div>
       ))}
     </div>

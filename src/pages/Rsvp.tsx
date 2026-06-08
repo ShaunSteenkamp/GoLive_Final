@@ -119,7 +119,7 @@ const Rsvp = () => {
               <p className="font-script text-2xl gold-accent-subtle mt-4">#RotsVas</p>
             </motion.div>
           ) : (
-            <motion.div variants={fadeInUp} className="paper-invitation rounded-lg p-8 md:p-10 shadow-xl">
+            <motion.div variants={fadeInUp} className="paper-invitation rounded-lg p-4 sm:p-8 md:p-10 shadow-xl">
               <Form {...form}>
                 <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-6 text-left">
                   <FormField

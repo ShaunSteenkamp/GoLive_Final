@@ -32,12 +32,12 @@ const Index = () => {
       <Navigation />
 
       {/* Invitation / Hero Section - no extra background, just the global fixed bg */}
-      <section className="relative min-h-[110vh] flex flex-col items-center justify-center px-4 pt-20 overflow-hidden">
+      <section className="relative min-h-screen md:min-h-[110vh] flex flex-col items-center justify-center px-4 pt-20 overflow-hidden">
         <motion.div
           variants={stagger}
           initial="hidden"
           animate="visible"
-          className="text-center z-10 max-w-3xl px-8 md:px-12 py-16 md:py-24 paper-invitation rounded-lg border border-wedding-gold/20 shadow-2xl overflow-hidden mt-10"
+          className="text-center z-10 max-w-3xl px-4 sm:px-8 md:px-12 py-12 sm:py-16 md:py-24 paper-invitation rounded-lg border border-wedding-gold/20 shadow-2xl overflow-hidden mt-10"
         >
           {/* Subtle floral pattern overlay on paper */}
           <div className="absolute inset-0 opacity-[0.03] pointer-events-none bg-[url('https://www.transparenttextures.com/patterns/vintage-floral.png')] shadow-inner" />
@@ -89,20 +89,20 @@ const Index = () => {
             <Countdown />
           </motion.div>
 
-          <motion.div variants={fadeInUp} className="flex flex-col sm:flex-row flex-wrap gap-4 justify-center">
-            <Button asChild size="lg" variant="fynbos" className="font-display tracking-[0.2em] uppercase text-sm px-10 py-7 shadow-2xl hover:scale-105 transition-all">
+          <motion.div variants={fadeInUp} className="flex flex-col sm:flex-row flex-wrap gap-3 justify-center">
+            <Button asChild size="lg" variant="fynbos" className="w-full sm:w-auto font-display tracking-[0.2em] uppercase text-xs sm:text-sm px-6 sm:px-10 py-6 sm:py-7 shadow-2xl hover:scale-105 transition-all">
               <Link to="/rsvp">RSVP Now</Link>
             </Button>
-            <Button asChild variant="outline" size="lg" className="font-display tracking-[0.2em] uppercase text-sm px-10 py-7 border-primary/30 text-primary hover:bg-primary hover:text-white transition-all">
+            <Button asChild variant="outline" size="lg" className="w-full sm:w-auto font-display tracking-[0.2em] uppercase text-xs sm:text-sm px-6 sm:px-10 py-6 sm:py-7 border-primary/30 text-primary hover:bg-primary hover:text-white transition-all">
               <Link to="/ceremony">The Ceremony</Link>
             </Button>
-            <Button asChild variant="outline" size="lg" className="font-display tracking-[0.2em] uppercase text-sm px-10 py-7 border-primary/30 text-primary hover:bg-primary hover:text-white transition-all">
+            <Button asChild variant="outline" size="lg" className="w-full sm:w-auto font-display tracking-[0.2em] uppercase text-xs sm:text-sm px-6 sm:px-10 py-6 sm:py-7 border-primary/30 text-primary hover:bg-primary hover:text-white transition-all">
               <Link to="/accommodation">Guest Info</Link>
             </Button>
-            <Button asChild variant="outline" size="lg" className="font-display tracking-[0.2em] uppercase text-sm px-10 py-7 border-primary/30 text-primary hover:bg-primary hover:text-white transition-all">
+            <Button asChild variant="outline" size="lg" className="w-full sm:w-auto font-display tracking-[0.2em] uppercase text-xs sm:text-sm px-6 sm:px-10 py-6 sm:py-7 border-primary/30 text-primary hover:bg-primary hover:text-white transition-all">
               <Link to="/gallery#gallery-top">View Gallery</Link>
             </Button>
-            <Button asChild variant="outline" size="lg" className="font-display tracking-[0.2em] uppercase text-sm px-10 py-7 border-primary/30 text-primary hover:bg-primary hover:text-white transition-all">
+            <Button asChild variant="outline" size="lg" className="w-full sm:w-auto font-display tracking-[0.2em] uppercase text-xs sm:text-sm px-6 sm:px-10 py-6 sm:py-7 border-primary/30 text-primary hover:bg-primary hover:text-white transition-all">
               <Link to="/guestbook">Guestbook</Link>
             </Button>
           </motion.div>
@@ -121,18 +121,18 @@ const Index = () => {
            whileInView="visible"
            viewport={{ once: true, margin: "-100px" }}
            variants={stagger}
-           className="container mx-auto max-w-4xl relative z-10 paper-invitation p-8 md:p-12 rounded-2xl shadow-xl"
+           className="container mx-auto max-w-4xl relative z-10 paper-invitation p-6 sm:p-8 md:p-12 rounded-2xl shadow-xl"
         >
-          <motion.div variants={fadeInUp} className="text-center mb-16">
-            <h2 className="font-display text-4xl md:text-5xl tracking-[0.2em] mb-6 text-primary uppercase">
+          <motion.div variants={fadeInUp} className="text-center mb-10 md:mb-16">
+            <h2 className="font-display text-3xl md:text-5xl tracking-[0.2em] mb-6 text-primary uppercase">
               Ons Verhaal
             </h2>
             <div className="w-24 h-px bg-wedding-gold/40 mx-auto mb-10" />
           </motion.div>
 
-          <div className="grid md:grid-cols-2 gap-16 items-center">
+          <div className="grid md:grid-cols-2 gap-10 md:gap-16 items-center">
             <motion.div variants={fadeInUp} className="space-y-6">
-              <p className="font-body text-xl md:text-2xl leading-relaxed text-foreground/90 first-letter:text-6xl first-letter:font-script first-letter:text-wedding-gold first-letter:mr-3 first-letter:float-left drop-shadow-sm">
+              <p className="font-body text-lg md:text-2xl leading-relaxed text-foreground/90 first-letter:text-5xl md:first-letter:text-6xl first-letter:font-script first-letter:text-wedding-gold first-letter:mr-3 first-letter:float-left drop-shadow-sm">
                 In 'n tyd toe die wêreld stil en afgesonder was, het 'n toevallige glimlag en 'n onverwags ontmoeting 'n vonk laat ontstaan wat ons lewens verander het. Waar ander mense vrees gehad het vir kontak, het ons twee siele mekaar gevind en 'n band gesmee wat onmiddellik onafskeidbaar gevoel het.
               </p>
               <p className="font-body text-xl md:text-2xl leading-relaxed text-foreground/90">
@@ -179,7 +179,7 @@ const Index = () => {
         >
           <motion.div 
             variants={fadeInUp}
-            className="paper-invitation rounded-lg p-8 md:p-12 shadow-xl"
+            className="paper-invitation rounded-lg p-6 sm:p-8 md:p-12 shadow-xl"
           >
             <p className="font-script text-3xl md:text-4xl text-primary mb-6">
               Thank You, Ben & Anri!
@@ -222,7 +222,7 @@ const Index = () => {
           variants={stagger}
           className="container mx-auto max-w-2xl"
         >
-          <motion.div variants={fadeInUp} className="mb-8 paper-invitation p-8 md:p-12 rounded-2xl shadow-xl">
+          <motion.div variants={fadeInUp} className="mb-8 paper-invitation p-6 sm:p-8 md:p-12 rounded-2xl shadow-xl">
             <h2 className="font-display text-3xl md:text-4xl tracking-[0.15em] mb-4 text-primary">
               OUR PHOTO GALLERY
             </h2>

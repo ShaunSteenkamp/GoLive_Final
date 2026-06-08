@@ -35,7 +35,7 @@ const Ceremony = () => {
                     variants={stagger}
                     initial="hidden"
                     animate="visible"
-                    className="space-y-16 paper-invitation p-8 md:p-12 rounded-2xl shadow-xl mt-8"
+                    className="space-y-12 md:space-y-16 paper-invitation p-6 sm:p-8 md:p-12 rounded-2xl shadow-xl mt-8"
                 >
                     {/* Ceremony Section */}
                     <motion.div variants={fadeInUp} className="text-center mb-12">

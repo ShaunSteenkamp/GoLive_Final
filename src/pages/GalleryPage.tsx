@@ -36,7 +36,7 @@ const Gallery = () => {
         >
           <motion.div 
             variants={fadeInUp}
-            className="paper-invitation rounded-2xl p-8 md:p-12 shadow-xl"
+            className="paper-invitation rounded-2xl p-6 sm:p-8 md:p-12 shadow-xl"
           >
             <p className="font-script text-3xl md:text-4xl text-primary mb-6">
               Thank You, Ben & Anri!

@@ -51,8 +51,8 @@ const YearPlan = () => {
 
   return (
     <section className="py-20 px-4">
-      <div className="container mx-auto max-w-4xl p-8 md:p-12">
-        <h2 className="font-display text-3xl md:text-4xl text-center tracking-[0.15em] mb-12 text-primary">
+      <div className="container mx-auto max-w-4xl p-4 sm:p-8 md:p-12">
+        <h2 className="font-display text-2xl md:text-4xl text-center tracking-[0.15em] mb-8 md:mb-12 text-primary">
           THE BIG DAY
         </h2>
         

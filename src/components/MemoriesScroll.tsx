@@ -24,7 +24,7 @@ const MemoriesScroll = () => {
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 1 }}
-          className="text-center paper-invitation p-8 md:p-12 rounded-2xl shadow-xl max-w-2xl mx-auto"
+          className="text-center paper-invitation p-6 sm:p-8 md:p-12 rounded-2xl shadow-xl max-w-2xl mx-auto"
         >
           <h2 className="font-display text-4xl md:text-6xl text-primary tracking-[0.2em] drop-shadow-sm uppercase">
             Our Journey
@@ -41,7 +41,7 @@ const MemoriesScroll = () => {
           {selectedPhotos.map((src, index) => (
             <motion.div
               key={index}
-              className="relative group flex-shrink-0 w-[80vw] md:w-[450px] aspect-[3/4] rounded-xl overflow-hidden shadow-2xl border-8 border-white"
+              className="relative group flex-shrink-0 w-[85vw] sm:w-[80vw] md:w-[450px] aspect-[3/4] rounded-xl overflow-hidden shadow-2xl border-4 sm:border-8 border-white"
               whileHover={{ scale: 1.02, transition: { duration: 0.3 } }}
             >
               <img

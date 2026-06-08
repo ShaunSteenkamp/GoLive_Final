@@ -128,7 +128,7 @@ const Gallery = () => {
           </motion.div>
         </motion.div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 auto-rows-[300px]">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6 auto-rows-[200px] md:auto-rows-[300px]">
           {images.map((image, index) => (
              <motion.div
                 key={image.id}

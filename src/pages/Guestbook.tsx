@@ -188,7 +188,7 @@ const Guestbook = () => {
            variants={stagger}
            initial="hidden"
            animate="visible"
-           className="space-y-16 paper-invitation p-8 md:p-12 rounded-2xl shadow-xl mt-8"
+           className="space-y-12 md:space-y-16 paper-invitation p-4 sm:p-8 md:p-12 rounded-2xl shadow-xl mt-8"
          >
             <motion.div variants={fadeInUp} className="text-center">
                 <h1 className="font-display text-4xl md:text-5xl text-primary mb-4 tracking-[0.1em]">
@@ -246,7 +246,7 @@ const Guestbook = () => {
                                 <Button 
                                     type="submit"
                                     disabled={isSubmittingSong}
-                                    className="md:col-span-2 bg-wedding-gold hover:bg-wedding-gold/90 text-white w-full md:w-auto ml-auto"
+                                    className="md:col-span-2 bg-wedding-gold hover:bg-wedding-gold/90 text-white w-full sm:w-auto ml-auto"
                                 >
                                     {isSubmittingSong ? "Submitting..." : "Submit Request"}
                                 </Button>
@@ -334,7 +334,7 @@ const Guestbook = () => {
                                 <Button 
                                     type="submit"
                                     disabled={isSubmittingMessage}
-                                    className="bg-wedding-gold hover:bg-wedding-gold/90 text-white w-full md:w-auto ml-auto"
+                                    className="bg-wedding-gold hover:bg-wedding-gold/90 text-white w-full sm:w-auto ml-auto"
                                 >
                                     {isSubmittingMessage ? "Signing..." : "Sign Guestbook"}
                                 </Button>
