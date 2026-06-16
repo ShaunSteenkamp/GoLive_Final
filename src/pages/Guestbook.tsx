@@ -361,7 +361,7 @@ const Guestbook = () => {
                             We'd love to see the wedding through your eyes! Click below to upload uncompressed photos to our Google Drive.
                         </p>
                         <Button asChild size="lg" className="bg-primary text-white font-display tracking-widest">
-                            <a href="https://drive.google.com/" target="_blank" rel="noopener noreferrer">
+                            <a href="https://drive.google.com/drive/folders/1UwIkWwbQhIzc5pD6wptgNIZlHuYCcJGq?usp=sharing" target="_blank" rel="noopener noreferrer">
                                 UPLOAD PHOTOS
                             </a>
                         </Button>

@@ -19,7 +19,7 @@ const stagger = {
 };
 
 const Ceremony = () => {
-    const churchMapUrl = "https://www.google.com/maps/place/Moederkerk+Stellenbosch+United+Reformed+Church/@-33.9378128,18.8606638,17z/data=!3m1!4b1!4m6!3m5!1s0x1dcdb25c6a51270b:0xc1de140237748434!8m2!3d-33.9378128!4d18.8632387!16s%2Fg%2F11b6y0_0_?entry=ttu";
+    const churchMapUrl = "https://www.google.com/maps/search/?api=1&query=Moedergemeente+Stellenbosch,+Church,+5+Drostdy+Rd,+Stellenbosch+Central,+Stellenbosch,+7600";
     const receptionMapUrl = "https://www.google.com/maps/search/Mulderbosch+Vineyards+Stellenbosch";
 
     return (

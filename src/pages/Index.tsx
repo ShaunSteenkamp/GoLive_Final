@@ -202,7 +202,7 @@ const Index = () => {
                 href="https://www.candidphotography.co.za" 
                 target="_blank" 
                 rel="noopener noreferrer"
-                className="flex items-center gap-2"
+                className="flex items-center justify-center gap-2"
               >
                 Visit Candid Photography
               </a>
