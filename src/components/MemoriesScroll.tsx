@@ -9,15 +9,15 @@ const MemoriesScroll = () => {
   const targetRef = useRef<HTMLDivElement>(null);
   const { scrollYProgress } = useScroll({
     target: targetRef,
-    offset: ["start start", "50% start"],
+    offset: ["start start", "end end"],
   });
 
   const selectedPhotos = allPhotos.slice(0, 20);
 
-  const x = useTransform(scrollYProgress, [0, 1], ["0%", "-85%"]);
+  const x = useTransform(scrollYProgress, [0, 1], ["1%", "-80%"]);
 
   return (
-    <section className="relative -mb-[100vh]">
+    <section className="relative bg-background">
       <div className="py-12 md:py-20 px-4">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -34,7 +34,7 @@ const MemoriesScroll = () => {
         </motion.div>
       </div>
 
-      <div ref={targetRef} className="relative h-[200vh]">
+      <div ref={targetRef} className="relative h-[300vh]">
         <div className="sticky top-0 h-screen flex items-center justify-center overflow-hidden">
         <motion.div style={{ x }} className="flex gap-8 px-8">
           {selectedPhotos.map((src, index) => (

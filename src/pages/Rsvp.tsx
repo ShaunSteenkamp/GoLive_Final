@@ -99,9 +99,23 @@ const Rsvp = () => {
           variants={{ visible: { transition: { staggerChildren: 0.15 } } }}
           className="container mx-auto max-w-lg text-center"
         >
-          <motion.p variants={fadeInUp} className="font-body text-lg text-muted-foreground mb-10">
+          <motion.p variants={fadeInUp} className="font-body text-lg text-muted-foreground mb-8">
             We would be honoured to have you celebrate with us
           </motion.p>
+
+          <motion.div variants={fadeInUp} className="mb-12 paper-invitation p-8 md:p-10 rounded-xl shadow-lg border border-wedding-gold/30">
+            <h2 className="font-display text-sm sm:text-base text-primary tracking-[0.2em] uppercase mb-3">Please RSVP by</h2>
+            <p className="font-display text-2xl sm:text-4xl text-wedding-gold tracking-widest uppercase mb-6 font-medium drop-shadow-sm">
+              15 July 2026
+            </p>
+            <div className="w-24 h-px bg-wedding-gold/40 mx-auto mb-6" />
+            <p className="font-body text-sm sm:text-base text-primary/80 leading-relaxed mb-4">
+              There is no specific colour scheme for our celebration. We simply ask that you dress sharp or wear your favourite dress, and arrive ready for a wonderful evening!
+            </p>
+            <p className="font-body text-sm sm:text-base text-primary/80 leading-relaxed">
+              For more details about the day, please visit our <a href="/guestbook" className="text-wedding-gold font-medium hover:text-primary transition-colors underline underline-offset-4">Guestbook</a>.
+            </p>
+          </motion.div>
 
           {submitted ? (
             <motion.div

@@ -89,20 +89,20 @@ const Index = () => {
             <Countdown />
           </motion.div>
 
-          <motion.div variants={fadeInUp} className="flex flex-col sm:flex-row flex-wrap gap-2 md:gap-3 justify-center">
-            <Button asChild size="default" variant="fynbos" className="w-full sm:w-auto font-display tracking-[0.15em] sm:tracking-[0.2em] uppercase text-xs sm:text-sm px-4 sm:px-8 py-4 sm:py-7 shadow-2xl hover:scale-105 transition-all">
+          <motion.div variants={fadeInUp} className="grid grid-cols-2 sm:flex sm:flex-row flex-wrap gap-2 md:gap-3 justify-center w-full">
+            <Button asChild size="default" variant="fynbos" className="col-span-2 sm:w-auto font-display tracking-[0.15em] sm:tracking-[0.2em] uppercase text-xs sm:text-sm px-4 sm:px-8 py-4 sm:py-7 shadow-2xl hover:scale-105 transition-all">
               <Link to="/rsvp">RSVP Now</Link>
             </Button>
-            <Button asChild variant="outline" size="default" className="w-full sm:w-auto font-display tracking-[0.15em] sm:tracking-[0.2em] uppercase text-xs sm:text-sm px-4 sm:px-8 py-4 sm:py-7 border-primary/40 bg-white/90 text-primary hover:bg-primary hover:text-white hover:border-primary transition-all shadow-md">
-              <Link to="/ceremony">The Ceremony</Link>
+            <Button asChild variant="outline" size="default" className="col-span-1 sm:w-auto font-display tracking-[0.05em] sm:tracking-[0.2em] uppercase text-[10px] sm:text-sm px-2 sm:px-8 py-4 sm:py-7 border-primary/40 bg-white/90 text-primary hover:bg-primary hover:text-white hover:border-primary transition-all shadow-md">
+              <Link to="/ceremony">Ceremony</Link>
             </Button>
-            <Button asChild variant="outline" size="default" className="w-full sm:w-auto font-display tracking-[0.15em] sm:tracking-[0.2em] uppercase text-xs sm:text-sm px-4 sm:px-8 py-4 sm:py-7 border-primary/40 bg-white/90 text-primary hover:bg-primary hover:text-white hover:border-primary transition-all shadow-md">
+            <Button asChild variant="outline" size="default" className="col-span-1 sm:w-auto font-display tracking-[0.05em] sm:tracking-[0.2em] uppercase text-[10px] sm:text-sm px-2 sm:px-8 py-4 sm:py-7 border-primary/40 bg-white/90 text-primary hover:bg-primary hover:text-white hover:border-primary transition-all shadow-md">
               <Link to="/accommodation">Guest Info</Link>
             </Button>
-            <Button asChild variant="outline" size="default" className="w-full sm:w-auto font-display tracking-[0.15em] sm:tracking-[0.2em] uppercase text-xs sm:text-sm px-4 sm:px-8 py-4 sm:py-7 border-primary/40 bg-white/90 text-primary hover:bg-primary hover:text-white hover:border-primary transition-all shadow-md">
-              <Link to="/gallery#gallery-top">View Gallery</Link>
+            <Button asChild variant="outline" size="default" className="col-span-1 sm:w-auto font-display tracking-[0.05em] sm:tracking-[0.2em] uppercase text-[10px] sm:text-sm px-2 sm:px-8 py-4 sm:py-7 border-primary/40 bg-white/90 text-primary hover:bg-primary hover:text-white hover:border-primary transition-all shadow-md">
+              <Link to="/gallery#gallery-top">Gallery</Link>
             </Button>
-            <Button asChild variant="outline" size="default" className="w-full sm:w-auto font-display tracking-[0.15em] sm:tracking-[0.2em] uppercase text-xs sm:text-sm px-4 sm:px-8 py-4 sm:py-7 border-primary/40 bg-white/90 text-primary hover:bg-primary hover:text-white hover:border-primary transition-all shadow-md">
+            <Button asChild variant="outline" size="default" className="col-span-1 sm:w-auto font-display tracking-[0.05em] sm:tracking-[0.2em] uppercase text-[10px] sm:text-sm px-2 sm:px-8 py-4 sm:py-7 border-primary/40 bg-white/90 text-primary hover:bg-primary hover:text-white hover:border-primary transition-all shadow-md">
               <Link to="/guestbook">Guestbook</Link>
             </Button>
           </motion.div>
