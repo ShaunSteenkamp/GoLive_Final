@@ -109,11 +109,8 @@ const Rsvp = () => {
               15 July 2026
             </p>
             <div className="w-24 h-px bg-wedding-gold/40 mx-auto mb-6" />
-            <p className="font-body text-sm sm:text-base text-primary/80 leading-relaxed mb-4">
-              There is no specific colour scheme for our celebration. We simply ask that you dress sharp or wear your favourite dress, and arrive ready for a wonderful evening!
-            </p>
             <p className="font-body text-sm sm:text-base text-primary/80 leading-relaxed">
-              For more details about the day, please visit our <a href="/guestbook" className="text-wedding-gold font-medium hover:text-primary transition-colors underline underline-offset-4">Guestbook</a>.
+              There is no specific colour scheme for our celebration. We simply ask that you dress sharp or wear your favourite dress, and arrive ready for a wonderful evening!
             </p>
           </motion.div>
 

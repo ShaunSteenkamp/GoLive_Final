@@ -272,10 +272,10 @@ const Guestbook = () => {
                             {funQuestions[activeQuestion]}
                         </h3>
                         <div className="flex justify-center gap-4 mb-6">
-                            <Button variant="outline" className="w-32 border-wedding-sage text-wedding-sage hover:bg-wedding-sage hover:text-white" onClick={() => handleAnswer("SHAUN")}>
+                            <Button className="w-32 bg-wedding-sage hover:bg-wedding-sage/90 text-white font-display tracking-widest shadow-md transition-all" onClick={() => handleAnswer("SHAUN")}>
                                 SHAUN
                             </Button>
-                            <Button variant="outline" className="w-32 border-wedding-blush text-wedding-blush hover:bg-wedding-blush hover:text-white transition-all" onClick={() => handleAnswer("ALEXANDRA")}>
+                            <Button className="w-32 bg-wedding-blush hover:bg-wedding-blush/90 text-white font-display tracking-widest shadow-md transition-all" onClick={() => handleAnswer("ALEXANDRA")}>
                                 ALEXANDRA
                             </Button>
                         </div>
