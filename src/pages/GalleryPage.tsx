@@ -53,13 +53,13 @@ const Gallery = () => {
               asChild
               variant="fynbos"
               size="lg"
-              className="font-display tracking-[0.15em] uppercase"
+              className="w-full sm:w-auto font-display tracking-[0.15em] uppercase px-6 sm:px-10 py-4 sm:py-7 shadow-2xl h-auto"
             >
               <a 
                 href="https://www.candidphotography.co.za" 
                 target="_blank" 
                 rel="noopener noreferrer"
-                className="flex items-center gap-2"
+                className="flex flex-col sm:flex-row items-center justify-center gap-2 text-center text-sm sm:text-base whitespace-normal break-words"
               >
                 Visit Candid Photography
               </a>
